@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find data/ -name *.decompose.vcf | \
+	sed -e 's/data/results/' -e 's/.decompose.vcf/.hg38_multianno.txt/'
